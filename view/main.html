@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cohetes</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <main class="row wrap">
+        <div class="column justify">
+            <h1>Crear</h1>
+            <!-- crear cohete  -->
+            <div class="row border margin">
+                <div class="column">
+                    <h3>Rocket :</h3>
+                    <input type="text" id='rocket-input' placeholder="min. 8 caracteres">
+                </div>
+                <div class="row">
+                    <button class="verticalButton" id='rocket-button'>Crear</button>
+                </div>
+            </div>
+            <!-- crear boosters  -->
+            <div class="row border center margin">
+                <div class="column center">
+                    <div class="column">
+                        <h3>Seleciona el Rocket!</h3>
+                        <select class='margin selects selectController' name="" id="rocket-select">
+                            <option value=""></option>
+                    </select>
+                        <h3>Booster :</h3>
+                        <div class="row">
+                            <button class='' id='sub'>-</button>           
+                            <button class='' id='plus'>+</button>
+                        </div>
+                        <input type="text" id='booster-input' placeholder="Potencia cv.">
+                    </div>
+                    <div id='showBoosters' class="border"></div>   
+                </div>
+                <div class="">
+                    <button class="verticalButton" id='create-boosters' >Crear</button>
+                </div>
+            </div>
+        </div>
+        <!-- mostar cohete 1 -->
+        <div class='column center'>
+            <h1>Controlador</h1>
+            <div class='row wrap center'>
+                <div class="border column center margin">
+                    <div class="row">
+                        <div class='border imagenMed center'>
+                            <img src="/img/rocket.png" alt="">
+                        </div>
+                        <div class="column center">
+                            <select class='margin selects selectController' name="" id="selectRocket1">
+                                <option value=""></option>
+                        </select>
+                            <button class='mediumButton' id='showRocketButton1'>Mostrar Cohete:</button>
+                        </div>
+                    </div>
+
+
+                    <div class='border imagenSmall' id='showRocket1'>
+                        <!-- Mostrar cohete -->
+                    </div>
+
+                    <div class="row">
+                        <button class='smallButton' id='speed1'>Acelerar</button>
+                        <button class='smallButton' id='break1'>Frenar</button>
+                    </div>
+                    <div>
+                        <p>Velocidade:</p>
+                        <div class='border imagenSmall' id='showSpeed1'>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+                <!-- mostar cohete 2 -->
+                <div class="border column center margin wrap">
+                    <div class="row">
+                        <div class='border imagenMed center'>
+                            <img src="/img/spacecraft.png" alt="">
+                        </div>
+                        <div class="column center">
+                            <select class='margin select selectController' name="" id="selectRocket2">
+                                <option value=""></option>
+                        </select>
+                            <button class='mediumButton' id='showRocketButton2'>Mostrar Cohete:</button>
+                        </div>
+                    </div>
+
+
+                    <div class='border imagenSmall' id='showRocket2'>
+                        <!-- Mostrar cohete -->
+                    </div>
+
+                    <div class="row">
+                        <button class='smallButton' id='speed2'>Acelerar</button>
+                        <button class='smallButton' id='break2'>Frenar</button>
+                    </div>
+                    <div>
+                        <p>Velocidade:</p>
+                        <div class='border imagenSmall' id='showSpeed2'>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <script src="../model/booster.js"></script>
+    <script src="../model/rocket.js"></script>
+    <script src="../controllers/controllers.js"></script>
+</body>
+
+</html>

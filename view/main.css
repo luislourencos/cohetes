@@ -1,0 +1,150 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.border{
+    border:1px solid black;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.justify{
+    display: flex;
+    align-items: center;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px;
+    background-color:rgb(219, 255, 237);
+    transition-duration: 300ms;
+    outline: none;
+}
+
+button:hover{
+    background-color: black;
+    color:white;
+}
+.small{
+    width: 100px;
+    height: 50px;
+}
+
+select{
+    text-align: center;
+    font-size: 16px;
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+    height: 50px;
+    margin-right:10px;
+    outline: none;
+}
+
+.imagenSmall{
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    height: 100px;
+}
+.imagenMed{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.smallButton{
+    width: 80px;
+    height: 50px;
+}
+
+.mediumButton{
+    width: 200px;
+    height: 80px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+input{
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+    margin: 5px;
+    padding: 5px;
+    outline: none;
+}
+#showBoosters{
+    font-size: 16px;
+    text-align: center;
+    width: 210px;
+    height: 50px;
+    outline: hidden;
+}
+.verticalButton{
+width: 60px;
+height: 90px;
+}
+#plus,#sub{
+    width: 100px;
+    height: 30px;
+}
+#create-boosters{
+    width: 60px;
+    height: 330px;  
+}
+
+h3{
+    margin-left: 5px;
+}
+h1{
+    padding-top:10px;
+}
+p{
+    margin-left: 5px;
+}
+
+.margin{
+    margin:10px;
+}
+
+img{
+    width: 180px;
+    height: 180px;
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.borderRed{
+    border: 1px solid red;
+}
+
+.borderGreen{
+    border: 1px solid green;
+}
+
+.borderNone{
+    border: 0px solid black;
+}
+#showBoosters{
+    margin: 10px;
+}
